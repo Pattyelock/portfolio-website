@@ -1,0 +1,24 @@
+module.exports = {
+  // https://stylelint.io/user-guide/configuration
+  extends: [
+    'stylelint-config-html',
+    'stylelint-config-recommended-vue',
+    'stylelint-config-prettier',
+    'stylelint-config-standard-scss',
+    'stylelint-config-property-sort-order-smacss',
+  ],
+  customSyntax: 'postcss-html',
+  rules: {
+    'at-rule-no-unknown': null,
+    'scss/at-rule-no-unknown': true,
+    'order/properties-alphabetical-order': null,
+    'max-nesting-depth': 3,
+    'selector-class-pattern': null,
+    'selector-no-vendor-prefix': null,
+    'color-function-notation': null,
+    'function-no-unknown': null,
+    'value-keyword-case': null,
+    'declaration-colon-newline-after': null,
+    'string-quotes': 'single',
+  },
+};
